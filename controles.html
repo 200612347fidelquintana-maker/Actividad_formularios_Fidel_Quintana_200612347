@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    
+    <nav class="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="recuperar.html">Recuperar</a>
+        <a href="registrarse.html">Registrarse</a>
+        <a href="controles.html">Controles HTML5</a>
+    </nav>
+    
+    <main>
+        <h2>Requerir</h2>
+        <h3>Registrarse</h3>
+        
+        <form action="index.html" method="get">
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Apellido(s):</label>
+            <input type="text" id="apellido" name="apellido" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="1234-5678">
+            
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+            
+            <fieldset>
+                <legend>Género</legend>
+                <input type="checkbox" name="hombre" id="hombre" value="hombre">
+                <label for="hombre">Hombre</label>
+                
+                <input type="checkbox" name="mujer" id="mujer" value="mujer">
+                <label for="mujer">Mujer</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Intereses</legend>
+                <input type="checkbox" name="educacion" id="educacion" value="educacion">
+                <label for="educacion">Educación</label>
+                
+                <input type="checkbox" name="deportes" id="deportes" value="deportes">
+                <label for="deportes">Deportes</label>
+                
+                <input type="checkbox" name="arte" id="arte" value="arte">
+                <label for="arte">Arte</label>
+                
+                <input type="checkbox" name="ocio" id="ocio" value="ocio">
+                <label for="ocio">Ocio</label>
+            </fieldset>
+            
+            <label for="nivel-academico">Nivel Académico:</label>
+            <select id="nivel-academico" name="nivel-academico">
+                <option value="0">Sin estudios</option>
+                <option value="1">Primaria</option>
+                <option value="2">Secundaria</option>
+                <option value="3">Diversificado</option>
+                <option value="4">Tecnico Universitario</option>
+                <option value="5">Licenciatura</option>
+                <option value="6">Maestria</option>    
+                <option value="7">Doctorado</option>
+            </select>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">Registrarse</button>
+        </form>
+    </main>
+</body>
+</html>
