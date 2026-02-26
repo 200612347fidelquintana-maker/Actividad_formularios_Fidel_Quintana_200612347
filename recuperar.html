@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    
+    <nav class="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="recuperar.html">Recuperar</a>
+        <a href="registrarse.html">Registrarse</a>
+        <a href="controles.html">Controles HTML5</a>
+    </nav>
+    
+    <main>
+        <h2>Recuperar Contraseña</h2>
+        
+        <form action="index.html" method="get">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="pregunta">Pregunta de Seguridad:</label>
+            <select id="pregunta" name="pregunta">
+                <option value="0">Seleccione una pregunta</option>
+                <option value="1">¿Nombre de tu primera mascota?</option>
+                <option value="2">¿Ciudad de nacimiento?</option>
+                <option value="3">¿Tu comida favorita?</option>
+            </select>
+            
+            <label for="respuesta">Respuesta:</label>
+            <input type="text" id="respuesta" name="respuesta" required>
+            
+            <button type="submit">Recuperar Contraseña</button>
+            
+            <div class="forgot-link">
+                <a href="index.html">Volver al inicio</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
