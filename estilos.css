@@ -1,3 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
 h2 {
     text-align: center;
 }
@@ -7,7 +16,6 @@ form {
     border: 2px solid black;
     border-radius: 10px;
     padding: 20px;
-    margin: 0 auto;
     background-color: #f9f9f9;
 }
 
@@ -43,26 +51,6 @@ fieldset label {
     margin-right: 15px;
 }
 
-.nav-menu {
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-}
-
-.nav-menu a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 5px 10px;
-}
-
-.nav-menu a:hover {
-    color: blue;
-    background-color: #ddd;
-    border-radius: 3px;
-}
-
 button {
     background-color: #4CAF50;
     color: white;
@@ -77,35 +65,4 @@ button {
 
 button:hover {
     background-color: #45a049;
-}
-
-.forgot-link {
-    text-align: right;
-    margin-top: 10px;
-}
-
-.forgot-link a {
-    color: #666;
-    text-decoration: none;
-}
-
-.forgot-link a:hover {
-    color: blue;
-    text-decoration: underline;
-}
-
-.register-section {
-    text-align: center;
-    margin-top: 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header h1 {
-    text-align: center;
-    margin-top: 20px;
 }
